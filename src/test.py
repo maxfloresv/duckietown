@@ -11,12 +11,12 @@ def callback(msg):
 	buttons = list(msg.buttons)
 	B = buttons[1]
 
-  if B == 1:
-	  for i in range(len(axes)):
-		  axes[i] = 0
+  	if B == 1:
+		for i in range(len(axes)):
+			axes[i] = 0
 
-	  for i in range(len(buttons)):
-		  buttons[i] = 0
+	  	for i in range(len(buttons)):
+		  	buttons[i] = 0
 	
 	axes[0] *= 10
 	axes[1] *= math.pi * 0.5
