@@ -8,7 +8,7 @@ import cv2 # importar libreria opencv
 from cv_bridge import CvBridge # importar convertidor de formato de imagenes
 import numpy as np # importar libreria numpy
 
-class Template(object:
+class Template(object):
 	def __init__(self, args):
 		super(Template, self).__init__()
 		self.args = args
