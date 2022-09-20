@@ -18,7 +18,7 @@ class Template(object):
 		bridge = CvBridge()
 		image = bridge.imgmsg_to_cv2(msg, "bgr8")
 		
-		image_out = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
+		image_out = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 		
 		lower_limit = np.array([25, 130, 130])
 		upper_limit = np.array([35, 255, 255])
